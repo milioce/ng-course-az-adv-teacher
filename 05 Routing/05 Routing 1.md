@@ -3,7 +3,11 @@
 # 1. Files
  - `mock/db.json`: new resource `messages`
  - `app/mail/pages`
+   - `folder/mail-folder.component.ts`
  - `app/mail/components`
+   - `app`
+   - `item`
+   - `view`
  - `app/mail/models`
 
 # 5.1 Introducción
@@ -21,7 +25,7 @@ En el `AppRoutingModule` tenemos definida una ruta.
 `app/app-routing.module.ts`
 ```ts
 const routes: Routes = [
-  { path: '', redirectTo: 'folder/inbox', pathMatch: 'full' }
+  { path: '**', redirectTo: 'folder/inbox' }
 ];
 ```
 <br>
@@ -490,21 +494,5 @@ Y modificamos la plantilla
       <h2>{{ message.from }}</h2>
       <p>{{ message.full }}</p>
     </div>
-```
-<br>
-
-
-<br>
----
-Estoy aquí
----
----
-
-<br>
-
-> xxx
-
-`app/mail/xxx`
-```ts
 ```
 <br>
