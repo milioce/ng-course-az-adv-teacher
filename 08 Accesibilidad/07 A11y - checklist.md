@@ -58,3 +58,6 @@
 -	Contraste mínimo
 -	Alto contraste
 -	Tamaños de fuentes y longitud de párrafos
+
+
+- Foco en el `#main-content-header`
